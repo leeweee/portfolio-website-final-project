@@ -1,105 +1,121 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
 
 :root {
-  --background: #f5f0e8;
+  --background: #ffffff;
   --text: #111111;
-  --accent: #7a2f1b;
+  --accent: #111111;
   --card: #ffffff;
 }
 
 body.dark {
   --background: #111111;
-  --text: #f5f0e8;
-  --accent: #ffb199;
-  --card: #1f1f1f;
+  --text: #ffffff;
+  --accent: #ffffff;
+  --card: #111111;
 }
 
 body {
   margin: 0;
   background-color: var(--background);
   color: var(--text);
-  font-family: 'Inter', sans-serif;
+  font-family: 'Cormorant Garamond', serif;
   line-height: 1.6;
+  font-size: 20px;
 }
 
-h1, h2, h3 {
-  font-family: 'Playfair Display', serif;
+h1, h2, h3, h4, h5, h6,
+.logo,
+.navbar a,
+button,
+.button {
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: 600;
+  letter-spacing: 0.03em;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--text);
-  color: var(--background);
-  padding: 20px;
+  background-color: #ffffff;
+  color: #111111;
+  padding: 24px 32px;
 }
 
 .logo {
-  font-size: 22px;
+  font-size: 30px;
 }
 
 .navbar ul {
   list-style: none;
   display: flex;
-  gap: 18px;
+  gap: 24px;
   padding: 0;
+  margin: 0;
 }
 
 .navbar a {
-  color: var(--background);
+  color: #111111;
   text-decoration: none;
+  font-size: 22px;
 }
 
 .navbar a:hover {
-  color: var(--accent);
-  text-decoration: underline;
+  color: #888888;
+  text-decoration: none;
 }
 
 .navbar a:visited {
-  color: var(--background);
+  color: #111111;
 }
 
 #themeButton {
-  padding: 8px 12px;
-  border: 1px solid var(--background);
+  padding: 8px 14px;
+  border: none;
   background: transparent;
-  color: var(--background);
+  color: #111111;
   cursor: pointer;
+  font-size: 18px;
 }
 
 #themeButton:hover {
-  background-color: var(--background);
-  color: var(--text);
+  color: #888888;
 }
 
 .hero {
   min-height: 70vh;
   padding: 80px 30px;
   text-align: center;
-  background-image: url("https://picsum.photos/1200/700?random=20");
   background-size: cover;
   background-position: center;
   color: white;
 }
 
 .hero h2 {
-  font-size: 60px;
+  font-size: 72px;
+  font-weight: 600;
+}
+
+.hero p {
+  font-size: 24px;
 }
 
 .button {
   display: inline-block;
   margin-top: 20px;
-  padding: 12px 20px;
-  background-color: var(--accent);
-  color: white;
+  padding: 12px 24px;
+  background-color: white;
+  color: #111111;
   text-decoration: none;
+  border: none;
   transition: 0.3s;
+  font-size: 22px;
 }
 
 .button:hover {
-  transform: scale(1.05);
-  background-color: black;
+  transform: scale(1.04);
+  background-color: #111111;
+  color: white;
 }
 
 .page {
@@ -115,13 +131,13 @@ h1, h2, h3 {
 .cards {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 24px;
   padding: 50px;
 }
 
 .card {
   background-color: var(--card);
-  border: 1px solid var(--text);
+  border: none;
   padding: 25px;
   margin: 10px;
   width: 280px;
@@ -140,7 +156,8 @@ h1, h2, h3 {
 
 .gallery-grid img {
   width: 100%;
-  border: 2px solid var(--text);
+  border: none;
+  display: block;
 }
 
 .video-box iframe {
@@ -159,33 +176,40 @@ h1, h2, h3 {
 .contact-form input,
 .contact-form textarea {
   padding: 12px;
-  border: 1px solid var(--text);
+  border: none;
+  border-bottom: 1px solid var(--text);
   font-family: inherit;
+  font-size: 18px;
+  background: transparent;
+  color: var(--text);
 }
 
 .contact-form button {
   padding: 12px;
-  background-color: var(--accent);
+  background-color: #111111;
   color: white;
   border: none;
   cursor: pointer;
+  font-family: inherit;
+  font-size: 20px;
 }
 
 .contact-form button:hover {
-  background-color: black;
+  background-color: #888888;
 }
 
 footer {
   text-align: center;
-  padding: 20px;
-  background-color: var(--text);
-  color: var(--background);
+  padding: 24px;
+  background-color: #ffffff;
+  color: #111111;
 }
 
 /* Mobile */
 @media (max-width: 600px) {
   .navbar {
     flex-direction: column;
+    gap: 12px;
   }
 
   .navbar ul {
@@ -194,7 +218,11 @@ footer {
   }
 
   .hero h2 {
-    font-size: 36px;
+    font-size: 44px;
+  }
+
+  .hero p {
+    font-size: 20px;
   }
 
   .cards {
