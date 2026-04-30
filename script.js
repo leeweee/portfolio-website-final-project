@@ -17,7 +17,6 @@ if (themeButton) {
 // random images for home
 document.addEventListener("DOMContentLoaded", function () {
   const images = [
-    "numbness.jpg",
     "untitled(1).jpg",
     "okaymyles.jpg"
   ];
