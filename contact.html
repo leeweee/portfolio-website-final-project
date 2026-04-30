@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dahye Daisy Lee | Contact</title>
+  <meta name="description" content="Contact page for Dahye Daisy Lee.">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Dahye Daisy Lee</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="project.html">Project</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button id="themeButton">Dark Mode</button>
+    </nav>
+  </header>
+
+  <main class="page">
+    <h2>Contact</h2>
+    <p>Use this form to contact me.</p>
+
+    <form class="contact-form" action="https://formspree.io/f/mdabnwqp" method="POST"></form>
+      <label>Name</label>
+      <input type="text" name="name" required>
+
+      <label>Email</label>
+      <input type="email" name="email" required>
+
+      <label>Message</label>
+      <textarea name="message" rows="5" required></textarea>
+
+      <button type="submit">Send</button>
+    </form>
+
+    <p>Email: <a href="mailto:daisylee@students.calarts.edu">daisylee@students.calarts.edu</a></p>
+  </main>
+
+  <footer>
+    <p>© 2026 Dahye Daisy Lee</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
